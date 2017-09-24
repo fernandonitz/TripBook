@@ -15,9 +15,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/blog-post.css" rel="stylesheet">
-    
+        
+    <!-- Direccionamientos internos --> 
     <script type="text/javascript" src="js/logout.js"></script>
     <script type="text/javascript" src="js/direccionar.js"></script>
+    <script type="text/javascript" src="js/inicio.js"></script>
+
  </head>
 
   <body>
@@ -32,9 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Inicio
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link js-scroll-trigger" onclick="Inicio()" >Salir</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Perfil</a>
@@ -83,18 +84,7 @@
 
           <hr>
 
-          <!-- Comments Form -->
-          <div class="card my-4">
-            <h5 class="card-header">Deja un comentario:</h5>
-            <div class="card-body">
-              <form>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Publicar</button>
-              </form>
-            </div>
-          </div>
+
 
           <!-- Comment with nested comments -->
           <div class="media mb-4">
@@ -120,7 +110,18 @@
 
             </div>
           </div>
-
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Deja un comentario:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Publicar</button>
+              </form>
+            </div>
+          </div>
         </div>
 
         <!-- Sidebar Widgets Column -->
